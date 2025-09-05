@@ -1,0 +1,498 @@
+:root{
+    --color-white: #f6f6f6;
+    --color-sombre: #003246;
+    --text-color: #051920;
+    --btn-color: #22a6df;
+    --btn-hover-color: #1e90ff;
+    --color-gray: #dfe3e6;
+    --font-family: 'open Sans', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+body{
+    background-color: var(--color-white);
+    color: var(--text-color);
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+ul{
+    list-style: none;
+}
+li{
+    list-style: none;
+}
+header{
+    background-color: var(--color-sombre);
+    padding: 10px 0;
+    display: flex;
+}
+header .logo{
+    color: var(--color-white);
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+.logo span{
+    color: var(--btn-color);
+}
+header nav{
+    margin-left: auto;
+    margin-right: 50px;
+}
+header nav ul{
+    display: flex;
+    gap: 20px;
+    margin: 10px 0;
+    justify-content: center;
+    align-items: center;
+}
+header nav ul li a{
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+header nav ul li a:hover{
+    background-color: var(--btn-hover-color);
+}
+header nav ul li a.active{
+    background-color: var(--btn-color);
+}
+/* Section acceuil */
+.sectionAcceuil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-color: var(--color-white);
+     background-image: url('Images/african-american-software-developer-works-programming-code-laptop.jpg') ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+.sectionAcceuil .containtAcceuil{
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.containtAcceuil .AcceuilMessage h2{
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: var(--color-white);
+}
+.containtAcceuil .AcceuilMessage h2 span{
+    color: var(--btn-color);
+}
+.containtAcceuil .AcceuilMessage p{
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: var(--color-white);
+}
+.containtAcceuil .AcceuilMessage p span{
+    color: var(--btn-color);
+    font-weight: bold;
+}
+.containtAcceuil .AcceuilMessage .btn{
+    padding: 12px 24px;
+    background-color: var(--btn-color);
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.containtAcceuil .AcceuilMessage .btn:hover{
+    background-color: var(--btn-hover-color);
+    padding: 14px 26px;
+}
+/* Section A propos */
+.sectionAbout{
+    padding: 50px 10px;
+    background-color: var(--color-gray);
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+.sectionAbout h2{
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: var(--btn-color);
+}
+.Soulign{
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: var(--color-sombre);
+    margin: 0 auto 40px auto;
+    border-radius: 2px;
+}
+.containtAbout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+.containtAbout .aboutImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.containtAbout .aboutImage img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+
+}
+.containtAbout .aboutText{
+    text-align: left;
+}
+.containtAbout .aboutText h3{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--btn-color);
+}
+.containtAbout .aboutText p{
+    margin-bottom: 20px;
+}
+.containtAbout .aboutText .btn{
+    padding: 12px 24px;
+    background-color: var(--btn-color);
+    color: var(--color-white);
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+.containtAbout .aboutText .btn:hover{
+    background-color: var(--btn-hover-color);
+    padding: 14px 26px;
+}
+/* Section competences */
+.sectionCompetences{
+    max-height: 100vh;
+    padding: 40px 10px;
+    background-color: var(--color-white);
+    text-align: center;
+}
+.sectionCompetences .sectionTitle{
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: var(--btn-color);
+}
+.containtCompetences{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.containtCompetences .softSkills, .containtCompetences .hardSkills{
+    background-color: var(--color-sombre);
+    padding: 20px;
+    border-radius: 8px;
+    color: var(--color-white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.containtCompetences .softSkills{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.containtCompetences .softSkills h3{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--color-white);
+}
+.containtCompetences .softSkills .competence{
+    display: block;
+}
+.containtCompetences .softSkills .competence h3{
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: var(--color-white);
+
+}
+.containtCompetences .softSkills .competence .progressBar{
+    width: 200px;
+    height: 10px;
+    background-color: var(--color-white);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.containtCompetences .hardSkills{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.containtCompetences .hardSkills .competence{
+    display: block;
+}
+.containtCompetences .hardSkills h3{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--color-white);
+
+}
+.containtCompetences .hardSkills .competence h3{
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: var(--color-white);
+}
+.containtCompetences .hardSkills .competence .progressBar{
+    width: 200px;
+    height: 10px;
+    background-color: var(--color-white);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.progressBar .progress{
+    height: 100%;
+    background-color: var(--btn-color);
+    text-align: center;
+    line-height: 20px;
+    color: var(--color-white);
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+/* Section projects  */
+.sectionProjects{
+
+    min-height: 60vh;
+    padding: 30px 10px;
+    margin: 20px 0;
+    background-color: var(--color-gray);
+    text-align: center;
+}
+.sectionProjects .sectionTitle{
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: var(--btn-color);
+}
+.sectionProjects .Soulign{
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: var(--color-sombre);
+    margin: 0 auto 40px auto;
+    border-radius: 2px;
+}   
+.containtProjects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    min-height: 200px;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.containtProjects .project{
+    background-color: var(--color-white);
+    border-radius: 8px;
+    padding: 40px 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.containtProjects .project:hover{
+    transform: translateY(-10px);
+}
+.containtProjects .project img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.containtProjects .project h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--btn-color);
+}
+.containtProjects .project p{
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+.containtProjects .project .btn{
+    padding: 10px 20px;
+    background-color: var(--btn-color);
+    color: var(--color-white);
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+.containtProjects .project .btn:hover{
+    background-color: var(--btn-hover-color);
+    padding: 12px 22px;
+}
+
+/* Section contact */
+.sectionContact{
+    padding: 40px 10px;
+    background-color: var(--color-white);
+    text-align: center;
+}
+.sectionContact .sectionTitle{
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: var(--btn-color);
+}
+.sectionContact .Soulign{
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: var(--color-sombre);
+    margin: 0 auto 40px auto;
+    border-radius: 2px;
+}   
+.containtContact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 18px;
+}   
+.ContactFormulaire h3{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--btn-color);
+}
+.containtContact form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.containtContact form label{
+    font-size: 16px;
+    color: var(--text-color);
+}
+.containtContact form input, .containtContact form textarea{
+    padding: 10px;
+    border: 1px solid var(--color-gray);
+    border-radius: 4px;
+    font-size: 16px;
+    resize: vertical;
+}
+.containtContact form button{
+    padding: 12px 24px;
+    background-color: var(--btn-color);
+    color: var(--color-white);
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+.containtContact form button:hover{
+    background-color: var(--btn-hover-color);
+    padding: 14px 26px;
+}
+.containtContact .contactInfo{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+.containtContact .contactInfo h3{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--btn-color);
+}
+.containtContact .contactInfo p{
+    margin: 10px 0 5px 0;
+    color: var(--text-color);
+}
+.contactInfo .socialLinks{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+.contactInfo .socialLinks a{
+    font-size: 24px;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+
+/* Footer */
+footer{
+    background-color: var(--color-sombre);
+    color: var(--color-white);
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+footer p{
+    margin: 0;
+    font-size: 16px;
+}
+
+#typewriter{
+    display: inline-block;
+    border-right: 2px solid var(--btn-color);
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+/* animation css avec js */
+.reveal{
+    opacity: 0 !important;
+    transform: translateY(20px) !important;
+    transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out;
+}
+.reveal.visible{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+
+.slide-in-left{
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.slide-in-left.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.error{
+    color: red;
+    font-size: 0.9rem;
+}
