@@ -116,6 +116,9 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   if (name === '') {
     nameError.textContent = 'Le nom est requis.';
     valid = false;
+  }  else if (!/^[a-zA-Z\s]+$/.test(name)) {
+    nameError.textContent = 'Le nom ne doit contenir que des lettres.';
+    valid = false;
   }
 
   // Validation email
@@ -132,10 +135,14 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   if (message === '') {
     messageError.textContent = 'Le message est requis.';
     valid = false;
+  }  else if (!/^[a-zA-Z\s]+$/.test(name)) {
+    nameError.textContent = 'Le message ne doit contenir que des lettres.';
+    valid = false;
   }
   // Si tout est valide
   if (valid) {
     formSuccess.textContent = 'Formulaire envoyé avec succès !';
     this.reset(); 
   }
+
 });
