@@ -171,11 +171,11 @@
             <div class="ContactFormulaire">
                 <h3 id="typewriter5">Envoyez Moi un message</h3>
                 <form action="" method="POST" class="contactForm">
-                    <input type="text" name="name" placeholder="Votre nom" required>
+                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
                     <span class="error" id="nameError"></span>
-                    <input type="email" name="email" placeholder="Votre email" required>
+                    <input type="email" id="email" name="email" placeholder="Votre email" required>
                    <span class="error" id="emailError"></span>
-                    <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+                    <textarea name="message" id="message" rows="5" placeholder="Votre message" required></textarea>
                     <span class="error" id="messageError"></span>
                     <button type="submit" class="btn">Envoyer</button>
                     <p id="formSuccess" style="color: green;"></p>
@@ -201,4 +201,5 @@
         <script src="script.js"></script>
 
 </body>
+
 </html>
